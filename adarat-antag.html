@@ -11,17 +11,23 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.myskypower.net/" />
 
-    <title>Awesome Quiz App | Ali Aslan</title>
+    <title>Awesome Quiz App | ادارة الانتاج</title>
     <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="mobile-screen.css"
+    media="(max-width: 800px)"
+  />
     <!-- FontAweome CDN Link for Icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
     <!-- start Quiz button -->
-    <div class="start_btn"><button>قريبا ستضاف الأسئلة</button></div>
+    <div class="start_btn"><button>ابدء الأن</button></div>
+    <div><button id="myButton">الرجوع</button></div>
 
     <!-- Info Box -->
-    <!-- <div class="info_box" style="direction: rtl;">
+    <div class="info_box" style="direction: rtl;">
         <div class="info-title"><span>بعض قواعد هذا الاختبار</span></div>
         <div class="info-list">
             <div class="info">1. سيكون لديك <span>15 ثانية</span> فقط لكل سؤال.</div>
@@ -34,7 +40,7 @@
             <button class="quit">اختيار الخروج</button>
             <button class="restart">استمر</button>
         </div>
-    </div> -->
+    </div>
 
     <!-- Quiz Box -->
     <div class="quiz_box" dir="rtl">
@@ -70,13 +76,13 @@
         <div class="icon">
             <i class="fas fa-crown"></i>
         </div>
-        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="complete_text">لقد أكملت الاختبار!</div>
         <div class="score_text">
             <!-- Here I've inserted Score Result from JavaScript -->
         </div>
         <div class="buttons">
-            <button class="restart">Replay Quiz</button>
-            <button class="quit">Quit Quiz</button>
+            <button class="restart">إعادة الاختبار</button>
+            <button class="quit">قم بأنهاء الأختبار</button>
         </div>
     </div>
 

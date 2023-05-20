@@ -218,6 +218,6 @@ function queCounter(index){
 
 // backButton
 
-document.getElementById("back_btn").addEventListener("click", function(){
-  window.location.replace("index.html");
+document.getElementById("myButton").addEventListener("click", function(){
+  window.history.back();
 });
