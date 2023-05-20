@@ -12,7 +12,7 @@
   margin-top: 20px;
   font-size: 35px;
   font-weight:200;
-  color: red;
+  color: #007bff;
   outline: none;
   border: none;
   border-radius: 5px;
@@ -22,17 +22,17 @@
 }
 
 .start_btn  {
-  margin-left:20px;
-  text-align: center;
-  width: 100%;
+  width: 90%;
+  margin-top: -40px;
+  display:grid;
+  padding: 10px;
+  padding-top:-2px;
   font-size: 40px;
-  font-weight: 600;
-  color: #007bff;
-  padding: 5px 10px;
+  font-weight:400;
   outline: none;
   border: none;
   border-radius: 5px;
-  background: #fff;
+  background: #fafafa;
   cursor: pointer;
 }
 
