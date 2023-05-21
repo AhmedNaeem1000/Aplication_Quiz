@@ -1,3 +1,6 @@
+
+
+
 // creating an array and passing the number, questions, options, and answers
 let questions = [
     {
@@ -821,3 +824,13 @@ let questions = [
     ]
   },
 ];
+
+// Shuffle questions array
+questions.sort(function() {
+  return 0.5 - Math.random();
+});
+
+
+
+// Select the first 30 questions
+questions = questions.slice(0, 30);
