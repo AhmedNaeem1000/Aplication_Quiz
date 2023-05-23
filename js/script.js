@@ -26,12 +26,18 @@ exit_btn.onclick = ()=>{
 
 // if continueQuiz button clicked
 continue_btn.onclick = ()=>{
-    info_box.classList.remove("activeInfo"); //hide info box
-    quiz_box.classList.add("activeQuiz"); //show quiz box
-    showQuetions(0); //calling showQestions function
-    queCounter(1); //passing 1 parameter to queCounter
-    startTimer(60); //calling startTimer function
-    startTimerLine(0); //calling startTimerLine function
+  info_box.classList.remove("activeInfo"); //hide info box
+  quiz_box.classList.add("activeQuiz"); //show quiz box
+  showQuetions(0); //calling showQestions function
+  queCounter(1); //passing 1 parameter to queCounter
+  startTimer(60); //calling startTimer function
+  startTimerLine(0); //calling startTimerLine function
+  playSound(); // play sound
+}
+
+function playSound() {
+  const audio = new Audio('../1_SABAH.mp3');
+  audio.play();
 }
 
 let timeValue =  60;
@@ -199,7 +205,7 @@ function startTimer(time){
 }
 
 function startTimerLine(time){
-    counterLine = setInterval(timer, 29);
+    counterLine = setInterval(timer, 101);
     function timer(){
         time += 1; //upgrading time value with 1
         time_line.style.width = time + "px"; //increasing width of time_line with px by time value
@@ -228,3 +234,19 @@ function playSound() {
   const audio = new Audio('./1_SABAH.mp3');
   audio.play();
 }
+
+const muteBtn = document.querySelector(".mute-btn");
+let isMuted = false;
+
+muteBtn.addEventListener("click", function() {
+  const audio = document.getElementById("audio");
+  if (isMuted) {
+    audio.play();
+    muteBtn.innerHTML = '<i class="fas fa-volume-up"></i>';
+    isMuted = false;
+  } else{
+    audio.pause();
+    muteBtn.innerHTML = '<i class="fas fa-volume-mute"></i>';
+    isMuted = true;
+  }
+});
