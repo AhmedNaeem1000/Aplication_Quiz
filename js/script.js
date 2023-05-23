@@ -32,13 +32,13 @@ continue_btn.onclick = ()=>{
   queCounter(1); //passing 1 parameter to queCounter
   startTimer(60); //calling startTimer function
   startTimerLine(0); //calling startTimerLine function
-  playSound(); // play sound
+//   playSound(); // play sound
 }
 
-function playSound() {
-  const audio = new Audio('../1_SABAH.mp3');
-  audio.play();
-}
+// function playSound() {
+//   const audio = new Audio('../1_SABAH.mp3');
+//   audio.play();
+// }
 
 let timeValue =  60;
 let que_count = 0;
