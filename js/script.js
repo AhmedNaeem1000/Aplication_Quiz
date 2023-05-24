@@ -32,13 +32,14 @@ continue_btn.onclick = ()=>{
   queCounter(1); //passing 1 parameter to queCounter
   startTimer(60); //calling startTimer function
   startTimerLine(0); //calling startTimerLine function
-//   playSound(); // play sound
+  playSound(); // play sound
+
 }
 
-// function playSound() {
-//   const audio = new Audio('../1_SABAH.mp3');
-//   audio.play();
-// }
+function playSound() {
+  const audio = new Audio('../1_SABAH.mp3');
+  audio.play();
+}
 
 let timeValue =  60;
 let que_count = 0;
@@ -132,6 +133,7 @@ function optionSelected(answer){
     
     if(userAns == correcAns){ //if user selected option is equal to array's correct answer
         userScore += 1; //upgrading score value with 1
+        // playSound(); // play sound
         answer.classList.add("correct"); //adding green color to correct selected option
         answer.insertAdjacentHTML("beforeend", tickIconTag); //adding tick icon to correct selected option
         console.log("Correct Answer");
