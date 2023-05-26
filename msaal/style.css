@@ -5,7 +5,7 @@ body{
 
 .qu{
   width: 100%;
-  background: rgb(5, 44, 116);
+  background: #fff;
   border-radius: 5px;
   pointer-events: none;
   transition: all 0.3s ease;
