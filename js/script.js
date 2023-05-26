@@ -1,5 +1,6 @@
 //selecting all required elements
 const start_btn = document.querySelector(".start_btn button");
+const myButtonTwo = document.querySelector("#myButtonTwo");
 const back_btn = document.querySelector(".back_btn button");
 
 const info_box = document.querySelector(".info_box");
@@ -13,10 +14,14 @@ const timeText = document.querySelector(".timer .time_left_txt");
 const timeCount = document.querySelector(".timer .timer_sec");
 
 
+
 // if startQuiz button clicked
 start_btn.onclick = ()=>{
     info_box.classList.add("activeInfo"); //show info box
-}
+    myButtonTwo.style.display = "none";
+
+
+  }
 
 // if exitQuiz button clicked
 exit_btn.onclick = ()=>{
@@ -32,7 +37,6 @@ continue_btn.onclick = ()=>{
   queCounter(1); //passing 1 parameter to queCounter
   startTimer(60); //calling startTimer function
   startTimerLine(0); //calling startTimerLine function
-  playSound(); // play sound
 
 }
 
@@ -229,10 +233,9 @@ document.getElementById("myButton").addEventListener("click", function(){
   window.history.back();
 });
 
-document.getElementById("myButtonTwo").addEventListener("click", function(){
+myButtonTwo.addEventListener("click", function(){
  window.location.href = "./msaal/malia.html";
 });
-
 
 
 
