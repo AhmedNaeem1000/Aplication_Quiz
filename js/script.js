@@ -229,9 +229,10 @@ document.getElementById("myButton").addEventListener("click", function(){
   window.history.back();
 });
 
-// document.getElementById("myButton").addEventListener("click", function(){
-//   window.open(q|..
-// });
+document.getElementById("myButtonTwo").addEventListener("click", function(){
+ window.location.href = "./msaal/malia.html";
+});
+
 
 
 
