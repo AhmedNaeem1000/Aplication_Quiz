@@ -36,10 +36,7 @@ continue_btn.onclick = ()=>{
 
 }
 
-function playSound() {
-  const audio = new Audio('../1_SABAH.mp3');
-  audio.play();
-}
+
 
 let timeValue =  60;
 let que_count = 0;
@@ -138,10 +135,12 @@ function optionSelected(answer){
         answer.insertAdjacentHTML("beforeend", tickIconTag); //adding tick icon to correct selected option
         console.log("Correct Answer");
         console.log("Your correct answers = " + userScore);
+        playTrue()
     }else{
         answer.classList.add("incorrect"); //adding red color to correct selected option
         answer.insertAdjacentHTML("beforeend", crossIconTag); //adding cross icon to correct selected option
         console.log("Wrong Answer");
+        playFalse()
 
         for(i=0; i < allOptions; i++){
             if(option_list.children[i].textContent == correcAns){ //if there is an option which is matched to an array answer 
@@ -230,25 +229,20 @@ document.getElementById("myButton").addEventListener("click", function(){
   window.history.back();
 });
 
+// document.getElementById("myButton").addEventListener("click", function(){
+//   window.open(q|..
+// });
 
 
-function playSound() {
-  const audio = new Audio('./1_SABAH.mp3');
+
+function playTrue() {
+  const audio = new Audio('./WhatsApp Audio 2023-05-25 at 19.12.03.mp3');
   audio.play();
 }
 
-const muteBtn = document.querySelector(".mute-btn");
-let isMuted = false;
 
-muteBtn.addEventListener("click", function() {
-  const audio = document.getElementById("audio");
-  if (isMuted) {
-    audio.play();
-    muteBtn.innerHTML = '<i class="fas fa-volume-up"></i>';
-    isMuted = false;
-  } else{
-    audio.pause();
-    muteBtn.innerHTML = '<i class="fas fa-volume-mute"></i>';
-    isMuted = true;
-  }
-});
+function playFalse() {
+  const audio = new Audio('./WhatsApp Audio 2023-05-25 at 18.59.06.mp3');
+  audio.play();
+}
+

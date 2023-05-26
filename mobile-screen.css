@@ -44,8 +44,8 @@
   margin-left: 20px;
   display:grid;
   padding:20px;
-  padding-top:-20px;
-  margin-top: 400px;
+  padding-top:-10px;
+  margin-top: 550px;
   font-size: 35px;
   font-weight:200;
   color: #007bff;
@@ -56,6 +56,22 @@
   cursor: pointer;
 }
 
+#myButtonTwo{
+  width: 90%;
+  margin-left: 20px;
+  display:grid;
+  padding:20px;
+  padding-top:-10px;
+  margin-top: -300px;
+  font-size: 35px;
+  font-weight:200;
+  color: #007bff;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: #fafafa;
+  cursor: pointer;
+}
 
 .info_box{
   width: 100%;
