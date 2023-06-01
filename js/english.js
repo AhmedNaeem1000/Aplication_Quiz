@@ -379,7 +379,7 @@ let questions = [
   answer:"false",
   options: [
     "true",
-    "flase",
+    "false",
   
   
   ]
