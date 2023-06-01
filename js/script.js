@@ -37,7 +37,7 @@ continue_btn.onclick = ()=>{
   queCounter(1); //passing 1 parameter to queCounter
   startTimer(60); //calling startTimer function
   startTimerLine(0); //calling startTimerLine function
-  play()
+//   play()
 
 }
 
@@ -255,10 +255,10 @@ function playFalse() {
   audio.play();
 }
 
-function play() {
-  const audio = new Audio('./playS.mp3');
-  audio.play();
-}
+// function play() {
+//   const audio = new Audio('./playS.mp3');
+//   audio.play();
+// }
 
 function winner() {
   const audio = new Audio('./winner.mp3');
