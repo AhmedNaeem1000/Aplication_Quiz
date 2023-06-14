@@ -101,7 +101,7 @@ let questions = [
 },
 {
   numb: 10,
-  question: "- C/A is a shortened form of the word ‘account’.",
+  question: "C/A is a shortened form of the word ‘account’.",
   answer:"false",
   options: [
     "true",
@@ -167,7 +167,7 @@ let questions = [
 },
 {
   numb: 16,
-  question: "- CEO is the abbreviation of Chief Executive Officer.",
+  question: "CEO is the abbreviation of Chief Executive Officer.",
   answer:"true",
   options: [
     "true",
@@ -244,7 +244,7 @@ let questions = [
 },
 {
   numb: 23,
-  question: "- FIFO is the abbreviation of First-In-First-Out.",
+  question: "FIFO is the abbreviation of First-In-First-Out.",
   answer:"true",
   options: [
     "true",
@@ -255,7 +255,7 @@ let questions = [
 },
   {
   numb: 24,
-  question: "- FYI is the abbreviation of For Your Information.",
+  question: "FYI is the abbreviation of For Your Information.",
   answer:"true",
   options: [
     "true",
@@ -331,7 +331,7 @@ let questions = [
 },
 {
   numb: 31,
-  question: "-A marketing plan is an unnecessary effort to start with before any marketing effort.",
+  question: "A marketing plan is an unnecessary effort to start with before any marketing effort.",
   answer:"false",
   options: [
     "true",
@@ -430,7 +430,7 @@ let questions = [
 },
   {
   numb: 40,
-  question: "Accounting is the art of recording, classifying and summarizing financial transactions and events and interpreting the results thereof.‖",
+  question: "Accounting is the art of recording, classifying and summarizing financial transactions and events and interpreting the results thereof.",
   answer:"true",
   options: [
     "true",
@@ -483,7 +483,7 @@ let questions = [
 },
 {
   numb: 4,
-  question: "- …… can be used in both external and internal correspondences.",
+  question: " …… can be used in both external and internal correspondences.",
   answer:"E-mails",
   options: [
     "E-mails",
@@ -511,7 +511,7 @@ let questions = [
 },
 {
   numb: 6,
-  question: "- Business memorandum is……..formal than e-mails.",
+  question: "Business memorandum is.....formal than e-mails.",
   answer:"more",
   options: [
     "more",
@@ -819,7 +819,7 @@ let questions = [
 },
 {
   numb: 28,
-  question: "- Assets= Liabilities + ....... .",
+  question: "Assets= Liabilities + ....... .",
   answer:" Owner’s Equity",
   options: [
     " Owner’s Equity",
