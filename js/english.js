@@ -2,11 +2,11 @@
 let questions = [
   {
   numb: 1,
-  question: "- Business correspondence is the communication or exchange of information in a written format for the process of business activities",
+  question: "Business correspondence is the communication or exchange of information in a written format for the process of business activities",
   answer:"true",
   options: [
     "true",
-    "flase",
+    "false",
   
   
   ]
@@ -14,10 +14,10 @@ let questions = [
 {
   numb: 2,
   question: "Business correspondence can only take place between organizations. ",
-  answer:"flase",
+  answer:"false",
   options: [
     "true",
-    "flase",
+    "false",
   
   
   ]
@@ -25,10 +25,10 @@ let questions = [
 {
   numb: 3,
   question: "Business correspondence is an informal communication",
-  answer:"flase",
+  answer:"false",
   options: [
     "true",
-    "flase",
+    "false",
   
   
   ]
@@ -39,7 +39,7 @@ let questions = [
   answer:"true",
   options: [
     "true",
-    "flase",
+    "false",
   
   
   ]
@@ -50,7 +50,7 @@ let questions = [
   answer:"true",
   options: [
     "true",
-    "flase",
+    "false",
   
   
   ]
@@ -61,7 +61,7 @@ let questions = [
   answer:"true",
   options: [
     "true",
-    "flase",
+    "false",
   
   
   ]
@@ -69,21 +69,21 @@ let questions = [
 {
   numb: 7,
   question: "A notice is an oral statement that contains the particulars of holding any event in an organization. ",
-  answer:"flase",
+  answer:"false",
   options: [
     "true",
-    "flase",
+    "false",
   
   
   ]
 },
 {
   numb: 8,
-  question: "- ASAP is an abbreviation for as soon as possible.",
+  question: "ASAP is an abbreviation for as soon as possible.",
   answer:"true",
   options: [
     "true",
-    "flase",
+    "false",
   
   
   ]
@@ -94,7 +94,7 @@ let questions = [
   answer:"false",
   options: [
     "true",
-    "flase",
+    "false",
   
   
   ]
@@ -105,7 +105,7 @@ let questions = [
   answer:"false",
   options: [
     "true",
-    "flase",
+    "false",
   
   
   ]
@@ -116,7 +116,7 @@ let questions = [
   answer:"true",
   options: [
     "true",
-    "flase",
+    "false",
   
   
   ]
@@ -127,7 +127,7 @@ let questions = [
   answer:"true",
   options: [
     "true",
-    "flase",
+    "false",
   
   
   ]
@@ -138,7 +138,7 @@ let questions = [
   answer:"true",
   options: [
     "true",
-    "flase",
+    "false",
   
   
   ]
@@ -149,7 +149,7 @@ let questions = [
   answer:"true",
   options: [
     "true",
-    "flase",
+    "false",
   
   
   ]
@@ -160,7 +160,7 @@ let questions = [
   answer:"true",
   options: [
     "true",
-    "flase",
+    "false",
   
   
   ]
@@ -171,7 +171,7 @@ let questions = [
   answer:"true",
   options: [
     "true",
-    "flase",
+    "false",
   
   
   ]
@@ -182,7 +182,7 @@ let questions = [
   answer:"true",
   options: [
     "true",
-    "flase",
+    "false",
   
   
   ]
@@ -193,7 +193,7 @@ let questions = [
   answer:"true",
   options: [
     "true",
-    "flase",
+    "false",
   
   
   ]
@@ -204,7 +204,7 @@ let questions = [
   answer:"false",
   options: [
     "true",
-    "flase",
+    "false",
   
   
   ]
@@ -215,7 +215,7 @@ let questions = [
   answer:"true",
   options: [
     "true",
-    "flase",
+    "false",
   
   
   ]
@@ -226,7 +226,7 @@ let questions = [
   answer:"true",
   options: [
     "true",
-    "flase",
+    "false",
   
   
   ]
@@ -237,7 +237,7 @@ let questions = [
   answer:"true",
   options: [
     "true",
-    "flase",
+    "false",
   
   
   ]
@@ -248,7 +248,7 @@ let questions = [
   answer:"true",
   options: [
     "true",
-    "flase",
+    "false",
   
   
   ]
@@ -259,7 +259,7 @@ let questions = [
   answer:"true",
   options: [
     "true",
-    "flase",
+    "false",
   
   
   ]
@@ -269,7 +269,7 @@ let questions = [
   answer:"true",
   options: [
     "true",
-    "flase",
+    "false",
   
   
   ]
@@ -280,7 +280,7 @@ let questions = [
   answer:"true",
   options: [
     "true",
-    "flase",
+    "false",
   
   
   ]
@@ -291,7 +291,7 @@ let questions = [
   answer:"true",
   options: [
     "true",
-    "flase",
+    "false",
   
   
   ]
@@ -302,7 +302,7 @@ let questions = [
   answer:"true",
   options: [
     "true",
-    "flase",
+    "false",
   
   
   ]
@@ -313,7 +313,7 @@ let questions = [
   answer:"true",
   options: [
     "true",
-    "flase",
+    "false",
   
   
   ]
@@ -321,10 +321,10 @@ let questions = [
 {
   numb: 30,
   question: "A marketing plan is a necessary effort to end with after any marketing effort",
-  answer:"flase",
+  answer:"false",
   options: [
     "true",
-    "flase",
+    "false",
   
   
   ]
@@ -335,7 +335,7 @@ let questions = [
   answer:"false",
   options: [
     "true",
-    "flase",
+    "false",
   
   
   ]
@@ -346,7 +346,7 @@ let questions = [
   answer:"true",
   options: [
     "true",
-    "flase",
+    "false",
   
   
   ]
@@ -357,7 +357,7 @@ let questions = [
   answer:"true",
   options: [
     "true",
-    "flase",
+    "false",
   
   
   ]
@@ -368,14 +368,14 @@ let questions = [
   answer:"false",
   options: [
     "true",
-    "flase",
+    "false",
   
   
   ]
 },
 {
   numb: 35,
-  question: "- Market research cannot be outsourced to agencies that have expertise in this process.",
+  question: "Market research cannot be outsourced to agencies that have expertise in this process.",
   answer:"false",
   options: [
     "true",
@@ -390,7 +390,7 @@ let questions = [
   answer:"true",
   options: [
     "true",
-    "flase",
+    "false",
   
   
   ]
@@ -401,7 +401,7 @@ let questions = [
   answer:"true",
   options: [
     "true",
-    "flase",
+    "false",
   
   
   ]
@@ -412,7 +412,7 @@ let questions = [
   answer:"false",
   options: [
     "true",
-    "flase",
+    "false",
   
   
   ]
@@ -423,7 +423,7 @@ let questions = [
   answer:"true",
   options: [
     "true",
-    "flase",
+    "false",
   
   
   ]
@@ -434,7 +434,7 @@ let questions = [
   answer:"true",
   options: [
     "true",
-    "flase",
+    "false",
   
   
   ]
