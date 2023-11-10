@@ -37,7 +37,7 @@ continue_btn.onclick = ()=>{
   queCounter(1); //passing 1 parameter to queCounter
   startTimer(60); //calling startTimer function
   startTimerLine(0); //calling startTimerLine function
-//   play()
+  play()
 
 }
 
@@ -168,13 +168,13 @@ function showResult(){
     quiz_box.classList.remove("activeQuiz"); //hide quiz box
     result_box.classList.add("activeResult"); //show result box
     const scoreText = result_box.querySelector(".score_text");
-    if (userScore > 14){ // if user scored more than 3
+    if (userScore >= 14 ){ // if user scored more than 3
         //creating a new span tag and passing the user score number and total question number
         let scoreTag = '<span>مبروك! 🎉, استمر علي هذا الاداء<p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
         scoreText.innerHTML = scoreTag;  //adding new span tag inside score_Text
         winner()
     }
-    else if(userScore > 29){ // if user scored more than 1
+     else if (userScore >= 28){ // if user scored more than 1
         let scoreTag = '<span>يالعيييب 😎 , كسبت التحدي <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
         scoreText.innerHTML = scoreTag;
         winner()
@@ -238,9 +238,7 @@ document.getElementById("myButton").addEventListener("click", function(){
   window.history.back();
 });
 
-myButtonTwo.addEventListener("click", function(){
- window.location.href = "./msaal/malia.html";
-});
+
 
 
 
