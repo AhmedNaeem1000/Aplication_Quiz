@@ -1,97 +1,209 @@
-<!-- Created By Ali Aslan  -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="MySkyPower / CREATIVE PRODUCTION GROUP We are the producers of your ideas. The workshop – the craftsmen – the designers – the engineers. Together we are one. One group of talented people who harness the power to build big ideas. From handmade to high- tech. With you we create. Bring us your ideas, designs, and dreams and we will build them. Whatever the scale. EVERY DAY WE BUILD BIG IDEAS We are MySkyPower." />
-    <meta property="og:title" content="My Sky Power | MSP />
-    <meta property="og:description" content="MySkyPower / CREATIVE PRODUCTION GROUP We are the producers of your ideas. The workshop – the craftsmen – the designers – the engineers. Together we are one. One group of talented people who harness the power to build big ideas. From handmade to high- tech. With you we create. Bring us your ideas, designs, and dreams and we will build them. Whatever the scale. EVERY DAY WE BUILD BIG IDEAS We are MySkyPower." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.myskypower.net/" />
 
-    <title>Awesome Quiz App | تأمين ادارة المخاطر</title>
-    <link rel="stylesheet" href="style.css">
-    <link
-    rel="stylesheet"
-    href="mobile-screen.css"
-    media="(max-width: 800px)"
-  />
-    <!-- FontAweome CDN Link for Icons-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-</head>
-<body>
 
-    <!-- start Quiz button -->
-    <div class="start_btn"><button>ابدء الأن</button></div>
-    <div><button id="myButton">الرجوع</button></div>
 
-    <!-- Info Box -->
-    <div class="info_box" style="direction: rtl;">
-        <div class="info-title"><span>بعض قواعد هذا الاختبار</span></div>
-        <div class="info-list">
-            <div class="info">1. سيكون لديك <span>60 ثانية</span> فقط لكل سؤال.</div>
-            <div class="info">2. بمجرد تحديد إجابتك ، لا يمكن التراجع عنها.</div>
-            <div class="info">3. لا يمكنك تحديد أي خيار بمجرد مرور الوقت.</div>
-            <div class="info">4. لا يمكنك الخروج من الاختبار أثناء اللعب.</div>
-            <div class="info">5. ستحصل على نقاط على أساس إجاباتك الصحيحة.</div>
-        </div>
-        <div class="buttons">
-            <button class="quit">اختيار الخروج</button>
-            <button class="restart">استمر</button>
-        </div>
-    </div>
+// creating an array and passing the number, questions, options, and answers
+let questions = [
+  {
+    numb: 1,
+    question: "من مكونات اطراف العقد لوثيقة التامين المؤمن له",
+    answer: "صح",
+    options: ["صح", "خطأ"],
+  },
+  {
+    numb: 2,
+    question: "عقد التامين هو وثيقة بين شركة التامين والمؤمن له",
+    answer: "صح",
+    options: ["صح", "خطأ"],
+  },
+  {
+    numb: 3,
+    question: "عقد التامين هو وثيقة بين شركة التامين والمؤمن له",
+    answer: "",
+    options: ["صح", "خطأ"],
+  },
+  {
+    numb: 4,
+    question:
+      "لتكوين وثيقة التأمين لابد من توافر المتعاقد (المؤمن له) والمؤمن عليه والمستفيدين والمؤمن (شركة التأمين)",
+    answer: "خطأ",
+    options: ["صح", "خطأ"],
+  },
+  {
+    numb: 5,
+    question:
+      "المستفيد  او المستفيدين وهو الشخص الذي يستحق مبلغ التامين في حالة وفاة المؤمن عليه",
+    answer: "صح",
+    options: ["صح", "خطأ"],
+  },
+  {
+    numb: 6,
+    question: "عملية التامين تسهل من فرص الحصول علي القرض من البنوك",
+    answer: "خطأ",
+    options: ["صح", "خطأ"],
+  },
+  {
+    numb: 7,
+    question: "من اهم فوائد التامين الحفاظ على المدخرات",
+    answer: "صح",
+    options: ["صح", "خطأ"],
+  },
+  {
+    numb: 8,
+    question:
+      "عملية التأمين تكون بمثابة عملية استثمار مريحة ومضمونة مثل غيرها من أنواع الأستثمار",
+    answer: "صح",
+    options: ["صح", "خطأ"],
+  },
+  {
+    numb: 9,
+    question:
+      "لا يلتزم التأمين الطبي بتغطية النفقات الطبية الاساسية مثل الكشوفات والادوية للحصول علي رعاية افضل",
+    answer: "خطأ",
+    options: ["صح", "خطأ"],
+  },
+  {
+    numb: 10,
+    question:
+      "من اهم فوائد التأمين الطبي تحمل جزء كبير من تكلفة الكثير من التحاليل الطبية",
+    answer: "صح",
+    options: ["صح", "خطأ"],
+  },
+  {
+    numb: 11,
+    question: "التأمين لمدي الحياة هو تأمين علي الحياة يظل ساريا حتي استحقاق الوثيقة وفي اي وقت تحدث فيه الوفاء وبدون تحديد المدة التي يجب ان تحدث خلالها الوفاة",
+    answer: "صح",
+    options: ["صح", "خطأ"],
+  },
+  {
+    numb: 12,
+    question: "عقد التأمين مدي الحياة المؤجل هو عقد بمقتضاه يدفع مبلغ التأمين عند وفاة المؤمن عليه الي المستفيد بشرط ان تحدث الوفاة بعد انتهاء مدة معلومة من تاريخ التعاقد",
+    answer: "صح",
+    options: ["صح", "خطأ"],
+  },
+  {
+    numb: 13,
+    question: "التأمين لمدي الحياة لا يقدم حماية تأمينية فقط مثل التأمين المؤقت وانما يحوي عنصر ادخاريا لا يستهان به يتيح للمؤمن له حق الأقتراض بضمان الوثيقة",
+    answer: "صح",
+    options: ["صح", "خطأ"],
+  },
+  {
+    numb: 14,
+    question: " فان شراء التامين لمدي الحياة يقتصر نفعه علي خلق الشعور بالأطمئنان للأسرة فقط",
+    answer: "خطأ",
+    options: ["صح", "خطأ"],
+  },
+  {
+    numb: 15,
+    question: "انواع عقود التامين في حال الحياة عقد التامين راس المال المؤجل",
+    answer: "خطأ",
+    options: ["صح", "خطأ"],
+  },
+  {
+    numb: 16,
+    question: " تعتبر عقود المعاشات من ضمن عقود التامين في حال الحياة",
+    answer: "خطأ",
+    options: ["صح", "خطأ"],
+  },
+  {
+    numb: 17,
+    question: "عقد دفعة معاش الحياة المؤجل المؤقت وهو اتفاق بين المؤمن والمستأمن يتعهد المؤمن بأن يدفع للمستأمن دفع دورية خلال مدة محدودة متفق عليها في العقد طالما كان المؤمن عليه حيا خلال مدة الدفع",
+    answer: "صح",
+    options: ["صح", "خطأ"],
+  },
+  {
+    numb: 18,
+    question: "وثائق التأمين المختلطة او المركبة هي تلك العقود التي تحتوي علي اكثر من نوع من انواع عقود التأمين علي الحياة",
+    answer: "صح",
+    options: ["صح", "خطأ"],
+  },
+  {
+    numb: 19,
+    question: "عقد التأمين المختلط المضاعف يتعهد فيه المؤمن ان يدفع للمستأمن نصف مبلغ التأمين المتفق عليه اذا بقي علي قيد الحياة",
+    answer: "خطأ",
+    options: ["صح", "خطأ"],
+  },
+  {
+    numb: 20,
+    question: " من عقود التامين المختلطة عقد التامين مدي الحياة المؤجل",
+    answer: "خطأ",
+    options: ["صح", "خطأ"],
+  },
+  {
+    numb: 21,
+    question: "حماية الأفراد من الخسائر المادية في حالة وقوع اي ضرر علي السيارة يعتبر من فوائد :",
+    answer: "التامين علي السيارات",
+    options: ["غير ذلك", "التامين علي السيارات" , "التامين الطبي"],
+  },
+  {
+    numb: 22,
+    question: "التأمين ضد السرقة وعمليات السطو يعتبر من اهم فوائد :",
+    answer: "التامين علي الممتلكات",
+    options: ["التامين علي السيارات", "التامين علي الممتلكات" , "غير ذلك"],
+  },
+  {
+    numb: 23,
+    question: "يعتبر التعويض عن انفجار الغاز المستعمل لأغراض المنزلية والتجارية في المحالت من اهم فوائد :",
+    answer: "التامين ضد الحرائق",
+    options: ["التامين ضد الحرائق", "التامين علي الممتلكات" , "غير ذلك"],
+  },
+  {
+    numb: 24,
+    question: "من انواع فوائد التامين :",
+    answer: "كل ما سبق",
+    options: ["التامين الطبي", "التامين علي السيارات" , "كل ما سبق"],
+  },
+  {
+    numb: 25,
+    question: "من انواع عقود التامين علي الحياة :",
+    answer: "كل ما سبق",
+    options: ["عقود التامين حال الوفاة", "عقود التامين حال الحياة" , "كل ما سبق"],
+  },
+  {
+    numb: 26,
+    question: "تلك العقود التي تتضمن دفع مبلغ معين للمستفيد في حالة وفاة المؤمن عليه تكون :",
+    answer: "غير ذلك",
+    options: ["عقود التامين حال الحياة", "عقود التامين المختلطة" , "غير ذلك"],
+  },
+  {
+    numb: 27,
+    question: "من انواع عقود التامين حال الوفاة :",
+    answer: "عقود التامين علي الحياة المؤقتة",
+    options: ["عقود التامين المختلطة", "عقود التامين علي الحياة المؤقتة" , "غير ذلك"],
+  },
+  {
+    numb: 28,
+    question: "هناك ثالث عوامل يتم الأخذ بها في التامين علي الحياة المؤقت :",
+    answer: " مبلغ التامين",
+    options: ["مبلغ التامين", " وثيقة التامين" , "غير ذلك"],
+  },
+  {
+    numb: 29,
+    question: "عقد بمقتضاه يدفع المؤمن مبلغ التأمين الي المستفيد او المستفيدين عند وفاة المؤمن عليه خلال مدة محدودة في العقد تبدء بعد انقضاء مدة تأجيل محددة يكون عبارة عن عقد التأمين علي الحياة:",
+    answer: "المؤقت المؤجل",
+    options: ["المؤقت المؤجل", "المختلط" , "غير ذلك"],
+  },
+{
+    numb: 30,
+    question: "دفعة معاش مدة الحياة عاجلة عادية عبارة عن القسط الوحيد الصافي لدفعة معاش علي حياة شخص عمره س سنة ومبلغ الدفعة بالجنية الواحد يدفع للمؤمن عليه في ......كل سنة بدء من تاريخ التعاقد",
+    answer: "نهاية",
+    options: ["بداية", "نهاية" , "غير ذلك"],
+  },
+  
+  {
+    numb: 31,
+    question:"من انواع عقود التامين مدي الحياة عقود:",
+    answer: "دفعة المعاشات",
+    options: ["دفعة المعاشات", "التامين المختلط" , "كل ما سبق"],
+  },
 
-    <!-- Quiz Box -->
-    <div class="quiz_box" dir="rtl">
-        <header>
-            <div class="title">تطبيق مسابقة نيمو</div>
-            <div class="timer">
-                <div class="time_left_txt">الوقت</div>
-                <div class="timer_sec">15</div>
-            </div>
-            <div class="time_line"></div>
-        </header>
-        <section>
-            <div class="que_text">
-                <!-- Here I've inserted question from JavaScript -->
-            </div>
-            <div class="option_list">
-                <!-- Here I've inserted options from JavaScript -->
-            </div>
-        </section>
+];
 
-        <!-- footer of Quiz Box -->
-        <footer>
-            <div class="total_que">
-                <!-- Here I've inserted Question Count Number from JavaScript -->
-            </div>
-            <button class="next_btn">التالي</button>
+// Shuffle questions array
+questions.sort(function() {
+  return 0.5 - Math.random();
+});
+س
 
-          </footer>
-    </div>
 
-    <!-- Result Box -->
-    <div class="result_box">
-        <div class="icon">
-            <i class="fas fa-crown"></i>
-        </div>
-        <div class="complete_text">لقد أكملت الاختبار!</div>
-        <div class="score_text">
-            <!-- Here I've inserted Score Result from JavaScript -->
-        </div>
-        <div class="buttons">
-            <button class="restart">إعادة الاختبار</button>
-            <button class="quit">قم بأنهاء الأختبار</button>
-        </div>
-    </div>
-
-    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
-    <script src="js/taminAdara.js"></script>
-
-    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
-    <script src="js/script.js"></script>
-
-</body>
-</html>
+// Select the first 30 questions
+questions = questions.slice(0, 30);
